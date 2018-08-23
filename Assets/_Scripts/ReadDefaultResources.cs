@@ -17,7 +17,6 @@ public class ReadDefaultResources : MonoBehaviour
         Renderer myRenderer = GetComponent<Renderer>();
 
         // make parent GameObject display our loaded image
-        myRenderer.material.SetTexture("_MainTex", externalImage);
-
+		myRenderer.material.mainTexture = externalImage;
     }
 }
